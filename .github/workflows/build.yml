@@ -10,8 +10,8 @@ on:
     paths-ignore:
       - "**.md"
   schedule:
-    # runs the CI everyday at 10AM
-    - cron: "0 10 * * *"
+    # runs at 07:00 on day-of-month 1.
+    - cron: "0 7 1 * *"
 
 jobs:
   build:
@@ -23,7 +23,6 @@ jobs:
           - stable
           - master
         pub:
-          - get
           - upgrade
 
     steps:
