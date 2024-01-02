@@ -1,5 +1,5 @@
 name: custom_lint_builder
-version: 0.5.7
+publish_to: none
 description: A package to help writing custom linters
 repository: https://github.com/invertase/dart_custom_lint
 
@@ -14,7 +14,7 @@ dependencies:
   # using a specific contract
   custom_lint:
     git:
-      url: https://github.com/SwissAS/dart_custom_lint.git
+      url: https://github.com/laurentschall/dart_custom_lint.git
       path: packages/custom_lint/
   # Using tight constraints as custom_lint_builder communicate with each-other
   # using a specific contract
